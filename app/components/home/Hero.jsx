@@ -1,0 +1,44 @@
+import Image from 'next/image'
+import React from 'react'
+import LinkBtn from '../LinkBtn'
+import { FaGithub, FaLinkedin, FaStar } from "react-icons/fa";
+import TextPill from './TextPill';
+
+const Hero = () => {
+  return (
+    <section className='h-[90vh] flex flex-col items-center justify-center'>
+        <TextPill 
+        text="Available for freelance work" 
+        icon={<FaStar size={20} className='text-yellow-500' />} 
+        />
+        <Image 
+        width={300}
+        height={300}
+        alt='zubair_dev' 
+        src={"/home/hero-mypic.jpeg"} 
+        className='rounded rounded-full mt-4'
+        />
+        <div className='mt-12 text-center max-w-lg'>
+            <h3 className='text-xl text-slate-300'>
+                Zubair Asif Dar
+            </h3>
+            <div className='space-y-2'>
+                <h1 className='text-4xl font-black'>
+                    Full-Stack Web Developer
+                </h1>
+                <p className='text-slate-300 text-xl'>
+                    I help businesses create fast, modern, and reliable websites that leave a great first impression and deliver a seamless user experience.
+                </p>
+                <div className='flex justify-center gap-3 mt-6'>
+                    <LinkBtn text="Contact Me" path={"/#contact"} />
+                    <LinkBtn text="View Projects" path={"/#contact"} variant={2} />
+                    <LinkBtn icon={<FaGithub size={25} />} path={"https://github.com/remotezubairdev"} variant={2} />
+                    <LinkBtn icon={<FaLinkedin size={25} />} path={"/"} variant={2} />
+                </div>
+            </div>
+        </div>
+    </section>
+  )
+}
+
+export default Hero
