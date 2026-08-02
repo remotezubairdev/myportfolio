@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Hero from "./components/home/Hero";
-import Trust from "./components/home/Trust";
+import Projects from "./components/home/Projects";
 import Navbar from "./components/Navbar";
 
 export default function Home() {
@@ -9,7 +9,7 @@ export default function Home() {
     <Navbar />
     <main>
       <Hero />
-      <Trust />
+      <Projects />
     </main>
     </>
   );
