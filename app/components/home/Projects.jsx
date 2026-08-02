@@ -1,4 +1,5 @@
 import React from 'react'
+import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
@@ -7,6 +8,9 @@ const Projects = () => {
                 <h1 className='text-center text-3xl font-black'>
                     Projects I've worked on
                 </h1>
+                <div className='grid grid-cols-2'>
+                  <ProjectCard />
+                </div>
             </div>
     </section>
   )
