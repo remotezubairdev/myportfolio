@@ -1,17 +1,65 @@
-import React from 'react'
+"use client"
+import React, { useState } from 'react'
 import ProjectCard from './ProjectCard'
+import LinkBtn from '../LinkBtn'
+import { projectDetails } from '../../../constants/projectDetails'
+
+import { FaGithub } from 'react-icons/fa'
+import { IoIosArrowDown } from "react-icons/io";
 
 const Projects = () => {
+  const [selectedProject, setSelectedProject] = useState(1);
+  const [projectImage, setProjectImage] = useState("/projects/goal-planner.png");
   return (
-    <section id="projects">
-            <div className='bg-linear-to-tr from-slate-900 to-slate-800 shadow-pink-300/20 shadow-2xl border border-slate-700/50 rounded-2xl p-16 mt-6 w-full h-[300px]'>
-                <h1 className='text-center text-3xl font-black'>
-                    Projects I've worked on
-                </h1>
-                <div className='grid grid-cols-2'>
-                  <ProjectCard />
+    <section id="projects" className='flex flex-wrap gap-y-12 justify-between py-12'>
+      <div>
+        <h1 className='text-3xl font-black'>
+            Projects I've worked on
+        </h1>
+
+        
+
+        <div className='mt-12 flex flex-col gap-4'>
+          {
+            projectDetails.map(project => (
+              <div key={project.id}>
+                <button 
+                className={`flex items-center justify-between cursor-pointer text-start border border-white/10 w-sm lg:w-xl p-3 ${project.id == selectedProject ? "bg-white/10" : ""}`}
+                onClick={() => {
+                  setSelectedProject(project.id)
+                  setProjectImage(project.imagePath)
+                }}
+                >
+                  {project.title}
+                  <IoIosArrowDown className={`${project.id == selectedProject ? "rotate-180" : ""} transition duration-300`} />
+                </button>
+                <div className={`grid ${project.id == selectedProject ? "grid-rows-[1fr]" : "grid-rows-[0fr]" } transition-all duration-300`}>
+                  <div className={`max-w-xl overflow-hidden`}>
+                    <div className='mt-8 space-y-4'>
+                      <h5 className='text-xl font-semibold'>
+                        {project.title}
+                      </h5>
+                      <p className='text-white/60'>
+                        {project.description}
+                      </p>
+                      <div className='w-fit flex items-center gap-3'>
+                        <LinkBtn text="View Live Demo" path={project.liveDemoLink} />
+                        <LinkBtn icon={<FaGithub />} text="Github Repository" path={project.githubRepo} variant={2} />
+                      </div>
+                      {
+                        !project.githubRepo && <p className='text-red-400 border border-red-400 p-2'>
+                          Note: The github repository is  private
+                          </p>
+                      }
+                    </div>
+                  </div>
                 </div>
-            </div>
+              </div>
+            ))
+          }
+        </div>
+      </div>
+      <ProjectCard projectImage={projectImage} />
     </section>
   )
 }

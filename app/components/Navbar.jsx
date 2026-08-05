@@ -1,6 +1,6 @@
 import React from 'react'
-import { navLinks } from './constants/navLinks'
 import Link from 'next/link'
+import { navLinks } from '../../constants/navLinks'
 
 const Navbar = () => {
   return (

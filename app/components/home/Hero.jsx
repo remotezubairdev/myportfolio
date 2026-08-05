@@ -31,9 +31,9 @@ const Hero = () => {
                 </p>
                 <div className='flex justify-center gap-3 mt-6'>
                     <LinkBtn text="Contact Me" path={"/#contact"} />
-                    <LinkBtn text="View Projects" path={"/#contact"} variant={2} />
+                    <LinkBtn text="View Projects" path={"/#projects"} variant={2} />
                     <LinkBtn icon={<FaGithub size={25} />} path={"https://github.com/remotezubairdev"} variant={2} />
-                    <LinkBtn icon={<FaLinkedin size={25} />} path={"/"} variant={2} />
+                    <LinkBtn icon={<FaLinkedin size={25} />} path={"https://www.linkedin.com/in/zubair-a-9a7a0833b/"} variant={2} />
                 </div>
             </div>
         </div>
