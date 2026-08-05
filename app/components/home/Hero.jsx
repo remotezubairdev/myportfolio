@@ -25,7 +25,7 @@ const Hero = () => {
             </h3>
             <div className='space-y-2'>
                 <h1 className='text-3xl md:text-4xl font-black'>
-                    Full-Stack Web Developer
+                    Website Developer
                 </h1>
                 <p className='text-slate-300 text-md md:text-xl'>
                     I help businesses create fast, modern, and reliable websites that leave a great first impression and deliver a seamless user experience.
