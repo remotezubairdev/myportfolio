@@ -9,7 +9,8 @@ const Hero = () => {
     <section id="hero" className='h-[90vh] flex flex-col items-center justify-center'>
         <TextPill 
         text="Available for freelance work" 
-        icon={<FaStar size={20} className='mt-12 md:mt-0 text-yellow-500' />} 
+        className="mt-12 md:mt-0"
+        icon={<FaStar size={20} className='text-yellow-500' />} 
         />
         <Image 
         width={300}
