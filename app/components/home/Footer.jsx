@@ -1,6 +1,9 @@
 import React from 'react'
 import LinkBtn from '../LinkBtn'
 import { FaLinkedin, FaGithub } from 'react-icons/fa';
+import { MdEmail, MdPhone } from 'react-icons/md';
+import { navLinks } from './../../../constants/navLinks';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -22,19 +25,30 @@ const Footer = () => {
             <h4 className='text-2xl'>
                 Contact Me
             </h4>
-            <p className='font-bold mt-6'>
-                <Email
+            <p className='flex items-center gap-1 font-bold mt-6'>
+                <MdEmail size={20} />
                 Email: {" "}
                 <span className='font-light text-white/80'>
                     remote.zubairdev@gmail.com
                 </span>
             </p>
-            <p className='font-bold'>
+            <p className='flex items-center gap-1 font-bold'>
+                <MdPhone size={20} />
                 Phone: {" "}
                 <span className='font-light text-white/80'>
                     +92 332 875 4442
                 </span>
             </p>
+        </div>
+        <div>
+            <h4 className='text-2xl'>
+                Sections
+            </h4>
+            <ul className='text-white/80'>
+                {
+                    navLinks.map(link => <li key={link.name}><Link href={link.path}>{link.name}</Link></li>)
+                }
+            </ul>
         </div>
     </footer>
   )
