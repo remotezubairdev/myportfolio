@@ -21,7 +21,7 @@ export const faqs = [
     id: 4,
     question: "Can you redesign my existing website?",
     answer:
-      "Absolutely. Whether your website looks outdated or isn't performing well, I can redesign it while preserving the parts that already work.",
+      "Absolutely. Whether your website looks outdated or isn't performing well, I can redesign it while preserving the parts that already work. If your current website isn't built with the technologies I use, I can recreate it with a modern, fast, and responsive solution using React and Next.js.",
   },
   {
     id: 5,
