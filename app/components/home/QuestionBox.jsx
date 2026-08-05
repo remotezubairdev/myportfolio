@@ -17,7 +17,7 @@ const QuestionBox = ({ id, question, answer, selected, setSelectedQuestion }) =>
         </button>
         <div className={`grid ${selected ? "grid-rows-[1fr]" : "grid-rows-[0fr]"} transition-all duration-300`}>
           <div className='overflow-hidden'>
-            <p className='p-8'>
+            <p className='p-2 md:p-8'>
               {answer}
             </p>
           </div>
