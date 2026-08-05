@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Footer = () => {
   return (
-    <footer className='py-12 flex justify-between'>
+    <footer className='py-12 flex flex-wrap gap-y-12 justify-between'>
         <div>
             <h3 className='text-white/60'>
                 Zubair Asif Dar
@@ -44,7 +44,7 @@ const Footer = () => {
             <h4 className='text-2xl'>
                 Sections
             </h4>
-            <ul className='text-white/80'>
+            <ul className='flex flex-col gap-1 mt-1 text-white/80'>
                 {
                     navLinks.map(link => <li key={link.name}><Link href={link.path}>{link.name}</Link></li>)
                 }

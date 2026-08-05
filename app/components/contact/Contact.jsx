@@ -28,7 +28,7 @@ const Contact = () => {
     }
 
   return (
-    <section id='contact' className='border border-white/10 p-12'>
+    <section id='contact' className='border border-white/10 p-6 sm:p-12'>
         <div className='text-center space-y-3'>
             <h2 className='font-black text-3xl'>Get in touch</h2>
             <p className='text-sm text-white/50'>
@@ -42,7 +42,7 @@ const Contact = () => {
         </div>
         <div className='mt-14 flex items-center flex-col'>
             <form className='space-y-10' onSubmit={handleSubmit(sendMessage)}>
-                <div className='grid grid-cols-2 gap-10'>
+                <div className='grid grid-cols-1 sm:grid-cols-2 gap-10'>
                     <input
                     {...register("fname")}
                     type="text" placeholder='Full Name' className='text-sm border-b border-b-white/10 pb-2 outline-none' />

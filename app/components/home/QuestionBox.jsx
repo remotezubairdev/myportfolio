@@ -7,7 +7,7 @@ const QuestionBox = ({ id, question, answer, selected, setSelectedQuestion }) =>
   }
   return (
     <div>
-        <button className='w-full cursor-pointer flex justify-between items-center border border-white/10 px-6 py-3'
+        <button className='text-start w-full cursor-pointer flex justify-between items-center border border-white/10 px-6 py-3'
         onClick={handleClick}
         >
             <h6>

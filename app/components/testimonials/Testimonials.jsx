@@ -17,7 +17,7 @@ const Testimonials = () => {
                 alt="rating_from_client"
                 className='my-2'
                 />
-                <h3 className='text-3xl '>
+                <h3 className='text-xl md:text-3xl'>
                     “Excellent work! The website looks modern, professional, and easy to navigate. The clean design, well-organized layout, and premium feel create a strong first impression. Great job!”
                 </h3>
                 <div className='mt-8 w-full flex items-center justify-between'>

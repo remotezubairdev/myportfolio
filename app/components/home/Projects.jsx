@@ -24,7 +24,7 @@ const Projects = () => {
             projectDetails.map(project => (
               <div key={project.id}>
                 <button 
-                className={`flex items-center justify-between cursor-pointer text-start border border-white/10 w-sm lg:w-xl p-3 ${project.id == selectedProject ? "bg-white/10" : ""}`}
+                className={`flex items-center justify-between cursor-pointer text-start border border-white/10 w-xs sm:w-sm lg:w-xl p-3 ${project.id == selectedProject ? "bg-white/10" : ""}`}
                 onClick={() => {
                   setSelectedProject(project.id)
                   setProjectImage(project.imagePath)
