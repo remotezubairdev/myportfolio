@@ -19,7 +19,7 @@ const QuestionBox = ({ id, question, answer, selected, setSelectedQuestion }) =>
       </header>
         <div className={`grid ${selected ? "grid-rows-[1fr]" : "grid-rows-[0fr]"} transition-all duration-300`}>
           <div className='overflow-hidden'>
-            <h4 className='p-8'>
+            <h4 className='p-2 md:p-8'>
               {answer}
             </h4>
           </div>

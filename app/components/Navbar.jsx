@@ -8,7 +8,7 @@ import { RxCross1 } from "react-icons/rx";
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
   return (
-    <header className='md:h-[10vh] flex justify-center items-center'>
+    <header className='h-fit flex justify-center items-center'>
         <nav className='shadow-sm shadow-gray-600/50 px-16 py-2 md:rounded-full md:mt-0 mt-12 border border-gray-50/10'>
             <ul className='hidden md:flex items-center gap-8 text-md'>
               {
