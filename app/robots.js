@@ -5,6 +5,5 @@ export default function robots() {
             allow: "/"
         },
         sitemap: "https://zubairdevportfolio.vercel.app/sitemap.xml",
-        host: "https://zubairdevportfolio.vercel.app"
     }
 }
