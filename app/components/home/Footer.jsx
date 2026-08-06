@@ -17,8 +17,8 @@ const Footer = () => {
             </h2>
             <div className='mt-6 flex gap-3 items-center'>
                 <LinkBtn text="Contact Me" path={"/#contact"} />
-                <LinkBtn icon={<FaGithub size={25} />} path={"https://github.com/remotezubairdev"} variant={2} />
-                <LinkBtn icon={<FaLinkedin size={25} />} path={"https://www.linkedin.com/in/zubair-a-9a7a0833b/"} variant={2} />
+                <LinkBtn text="Linkedin" icon={<FaLinkedin size={25} />} path={"https://www.linkedin.com/in/zubair-a-9a7a0833b/"} variant={2} />
+                <LinkBtn text="Github" icon={<FaGithub size={25} />} path={"https://github.com/remotezubairdev"} variant={2} />
             </div>
         </div>
         <div>
