@@ -12,7 +12,7 @@ export const metadata = {
   title: "Portfolio Home",
 
   description:
-    "Hi, I'm Zubair Asif Dar, a Full Stack Web Developer specializing in Next.js, React, Django, and modern web experiences. I build fast, responsive, SEO-friendly websites for businesses.",
+    "Hi, I'm Zubair Asif Dar, a Full Stack Web Developer specializing in Next.js, React, Django, and modern web experiences. I build fast, responsive, & SEO rich websites for businesses.",
 
   alternates: {
     canonical: "/",
