@@ -7,11 +7,11 @@ const FAQ = () => {
   const [selectedQuestion, setSelectedQuestion] = React.useState(1)
   return (
     <section id='faq' className='py-20'>
-      <h3
+      <h2
       className='text-center mb-12 font-black text-3xl'
       >
         Frequently Asked Questions
-      </h3>
+      </h2>
       <div className="max-w-xl mx-auto">
         {
           faqs.map((question) => (

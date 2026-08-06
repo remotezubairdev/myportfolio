@@ -13,9 +13,9 @@ const Projects = () => {
   return (
     <section id="projects" className='flex flex-wrap gap-y-12 justify-between py-12'>
       <div>
-        <h1 className='text-3xl font-black'>
+        <h2 className='text-3xl font-black'>
             Projects I've worked on
-        </h1>
+        </h2>
 
         
 
@@ -36,9 +36,9 @@ const Projects = () => {
                 <div className={`grid ${project.id == selectedProject ? "grid-rows-[1fr]" : "grid-rows-[0fr]" } transition-all duration-300`}>
                   <div className={`max-w-xl overflow-hidden`}>
                     <div className='mt-8 space-y-4'>
-                      <h5 className='text-xl font-semibold'>
+                      <h3 className='text-xl font-semibold'>
                         {project.title}
-                      </h5>
+                      </h3>
                       <p className='text-white/60'>
                         {project.description}
                       </p>

@@ -13,17 +13,17 @@ const Skills = () => {
             <span className='text-white/60'>
               2023-2026
             </span>
-            <h6>
+            <h4>
               High School at Defence Cambridge Campus
-            </h6>
+            </h4>
           </div>
           <div>
             <span className='text-white/60'>
               2026-Present
             </span>
-            <h6>
+            <h4>
               To be enrolled for A levels
-            </h6>
+            </h4>
           </div>
         </div>
       </div>
@@ -36,9 +36,9 @@ const Skills = () => {
             <span className='text-white/60'>
               Harvard Univerity CS50x Certificate
             </span>
-            <h6>
+            <h4>
               CS50x – Introduction to Computer Science
-            </h6>
+            </h4>
             <Image
             src="/home/CS50x.png"
             alt='cs50_certificate'

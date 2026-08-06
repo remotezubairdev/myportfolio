@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <section id='contact' className='border border-white/10 p-6 sm:p-12'>
         <div className='text-center space-y-3'>
-            <h2 className='font-black text-3xl'>Get in touch</h2>
+            <h2 className='font-black text-3xl'>Contact Me</h2>
             <p className='text-sm text-white/50'>
                 Feel free to reach out. I'm always happy to connect and discuss your ideas.
             </p>

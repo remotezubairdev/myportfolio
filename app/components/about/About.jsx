@@ -5,7 +5,7 @@ import Skills from './Skills'
 const About = () => {
   return (
     <section id="about" className='flex flex-col-reverse xl:flex-row justify-between gap-y-12 items-center py-32'>
-        <div className='max-w-2xl space-y-4'>
+        <article className='max-w-2xl space-y-4'>
             <h2 className='text-3xl font-black'>
                 About Me
             </h2>
@@ -18,7 +18,7 @@ const About = () => {
             <div className='mt-8'>
                 <Skills />
             </div>
-        </div>
+        </article>
         <Image width={600} height={400} alt="zubair" src="/home/about-me.png" />
     </section>
   )

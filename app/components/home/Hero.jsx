@@ -29,11 +29,15 @@ const Hero = () => {
                 <p className='text-slate-300 text-md md:text-xl'>
                     I help businesses create fast, modern, and reliable websites that leave a great first impression and deliver a seamless user experience.
                 </p>
-                <div className='flex justify-center gap-3 mt-6'>
-                    <LinkBtn text="Contact Me" path={"/#contact"} />
-                    <LinkBtn text="View Projects" path={"/#projects"} variant={2} />
-                    <LinkBtn icon={<FaGithub size={25} />} path={"https://github.com/remotezubairdev"} variant={2} />
-                    <LinkBtn icon={<FaLinkedin size={25} />} path={"https://www.linkedin.com/in/zubair-a-9a7a0833b/"} variant={2} />
+                <div className='flex flex-col items-center gap-3 mt-6'>
+                    <div className='flex items-center gap-3'>
+                        <LinkBtn text="Contact Me" path={"/#contact"} />
+                        <LinkBtn text="View Projects" path={"/#projects"} variant={2} />
+                    </div>
+                    <div className='flex items-center gap-3'>
+                        <LinkBtn text="Linkedin" icon={<FaLinkedin size={25} />} path={"https://www.linkedin.com/in/zubair-a-9a7a0833b/"} variant={2} />
+                        <LinkBtn text="Github" icon={<FaGithub size={25} />} path={"https://github.com/remotezubairdev"} variant={2} />
+                    </div>
                 </div>
             </div>
         </div>

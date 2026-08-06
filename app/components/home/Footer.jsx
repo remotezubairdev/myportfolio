@@ -9,9 +9,9 @@ const Footer = () => {
   return (
     <footer className='py-12 flex flex-wrap gap-y-12 justify-between'>
         <div>
-            <h3 className='text-white/60'>
+            <h2 className='text-white/60'>
                 Zubair Asif Dar
-            </h3>
+            </h2>
             <h2 className='text-2xl'>
                 Full Stack Web Developer
             </h2>
@@ -22,9 +22,9 @@ const Footer = () => {
             </div>
         </div>
         <div>
-            <h4 className='text-2xl'>
+            <h3 className='text-2xl'>
                 Contact Me
-            </h4>
+            </h3>
             <p className='flex items-center gap-1 font-bold mt-6'>
                 <MdEmail size={20} />
                 Email: {" "}
