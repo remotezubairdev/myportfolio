@@ -25,7 +25,7 @@ export const metadata = {
     url: "/",
     images: [
       {
-        url: "/hero-mypic.jpeg",
+        url: "/home/hero-mypic.jpeg",
         width: 400,
         height: 400,
         alt: "Zubair Asif Dar Portfolio",
@@ -37,7 +37,7 @@ export const metadata = {
     title: "Zubair Asif Dar | Full Stack Web Developer",
     description:
       "Portfolio showcasing modern web development projects using Next.js, React, Django, and Tailwind CSS.",
-    images: ["/hero-mypic.jpeg"],
+    images: ["/home/hero-mypic.jpeg"],
   },
 };
 

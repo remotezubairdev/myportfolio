@@ -69,7 +69,7 @@ export const metadata = {
     title: "Zubair Asif Dar | Full Stack Web Developer",
     description:
       "Building modern, responsive, SEO-friendly websites for businesses.",
-    images: ["/home/hero-mypic.png"],
+    images: ["/home/hero-mypic.jpeg"],
   },
 
   robots: {
