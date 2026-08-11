@@ -6,7 +6,7 @@ import TextPill from './TextPill';
 
 const Hero = () => {
   return (
-    <section id="hero" className='h-[90vh] flex flex-col items-center justify-center'>
+    <section id="hero" className='py-6 flex flex-col items-center justify-center'>
         <TextPill 
         text="Available for freelance work" 
         className="mt-12 md:mt-0"
