@@ -10,7 +10,7 @@ const About = () => {
                 About Me
             </h2>
             <p>
-                I’m a 17 year old self-taught full-stack web developer with experience in building modern & mobile responsive websites, so that I can help my clients generate more leads and grow their businesses. 
+                I’m a self-taught full-stack web developer with experience in building modern & mobile responsive websites, so that I can help my clients generate more leads and grow their businesses. 
                 <br /> <br/>
                 I have foundations in new industry-standard technologies to build fast web applications, including React JS, Next JS, Tailwind CSS, and Django.
             </p>
