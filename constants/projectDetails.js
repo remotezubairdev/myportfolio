@@ -11,7 +11,7 @@ export const projectDetails = [
     {
         id: 2,
         title: "Lasani Polyclinic Website",
-        description: "A website made to connect patients with doctors, using simple design, call buttons, and location preview.",
+        description: "A mobile-responsive website designed to make it easier for patients to discover the clinic, contact doctors, and find the location.",
         imagePath: "/projects/lasani.png",
         alt: "Homepage of the Lasani Polyclinic website displaying healthcare services and doctor information",
         liveDemoLink: "https://lasanipolyclinic.vercel.app",
